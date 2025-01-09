@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>{{usuario.nombre}} - {{usuario.email}} - {{usuario.telefono}} - {{usuario.pais}} - {{usuario.provincia}} - {{usuario.ciudad}} - {{usuario.fechaNacimiento}} - {{usuario.numeroDocumento}} </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
