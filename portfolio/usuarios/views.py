@@ -1,13 +1,9 @@
 from django.shortcuts import render, redirect
-
-# Create your views here.
 from django.http import JsonResponse
 from .models import Usuario
 from .formularios.form_usuario import UsuarioForm
 
-"""def lista_usuarios(request): 
-    usuarios = Usuario.objects.all()
-    return render(request, 'lista_usuarios.html',{'usuarios':usuarios})"""
+# Create your views here.
 
 def lista_usuarios(request): 
     usuarios = Usuario.objects.all()

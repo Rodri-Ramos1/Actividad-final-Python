@@ -1,13 +1,8 @@
 from django.shortcuts import render
-
-# Create your views here.
 from django.http import JsonResponse 
 from .models import Proyecto 
 
-"""def lista_proyectos(request): 
-    proyectos = Proyecto.objects.all() 
-    return render(request, 'lista_proyectos.html', {'proyectos': proyectos})""" 
-
+# Create your views here.
 def lista_proyectos(request): 
     proyectos = Proyecto.objects.all()
     

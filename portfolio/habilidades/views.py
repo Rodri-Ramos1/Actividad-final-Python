@@ -1,9 +1,8 @@
 from django.shortcuts import render
-
-# Create your views here.
 from django.http import JsonResponse
 from .models import Habilidad
 
+# Create your views here.
 def lista_habilidades(request):
     habilidades = Habilidad.objects.all()
 
